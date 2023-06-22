@@ -1,0 +1,41 @@
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+form button {
+    width: fit-content;
+}
+#map {
+    width: 50%;
+    height: calc(100vh - 150px);
+    border: 1px solid black;
+}
+img {
+    width: auto;
+    max-height: 50%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+button {
+    background-color: #257856;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    border: none;
+    border-radius: 5px;
+    box-shadow: none;
+    padding: 10px 15px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+form input:not([type="file"]), form textarea {
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid grey;
+}

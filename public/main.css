@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#content {
+    display: flex;
+    height: 80vh;
+}
+#info {
+    width: 65%;
+    padding: 20px;
+}
+#info img {
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+}
+
+#map-container {
+    width: 35%;
+    padding: 20px;
+}
+#range {
+    height: 40px;
+    text-align: center;
+    padding-top: 15px;
+    display: flex;
+    align-items: end;
+}
+#range .slider-year {
+    font-size: small;
+    width: 50px;
+}
+#slider-range {
+    flex-grow:1;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 50px;
+    background-color: #c5c5c5;
+    box-shadow: inset 0 0 4px black;
+}
+#slider-range .ui-slider-range {
+    background: #e11f2e;
+    background: linear-gradient(90deg, #e11f2e, #f45490);
+}
+.ui-slider-handle {
+    margin-top: -25px;
+    border-radius: 12px;
+    width: auto !important;
+    padding: 5px;
+    height: auto !important;
+    font-size: x-small;
+    background-color: white !important;
+    border-color: grey !important;
+    margin-left: -15px !important;
+}
+.ui-slider-handle:before {
+    content: '';
+    background: white;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    transform: rotate(45deg);
+    bottom: -4px;
+    left: 10px;
+}
+#map {
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+#map, #info img {
+    border: 1px solid black;
+}
+
+nav, footer {
+    background-color: #257856;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+nav h1 {
+    font-weight: lighter;
+}
+
+main {
+   margin-bottom: 50px;
+}
+
+#info-image {
+    margin-bottom: 10px;
+    height: 70%;
+    text-align: center;
+}
+#info-year {
+    font-size: small;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+#info-name {
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: italic;
+}
+#info-description-header {
+    margin-bottom: 10px;
+}
+#info-description {
+    font-style: italic;
+}
