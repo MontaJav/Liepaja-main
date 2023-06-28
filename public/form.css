@@ -39,3 +39,13 @@ form input:not([type="file"]), form textarea {
     margin-bottom: 10px;
     border: 1px solid grey;
 }
+#arrow-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+#arrow {
+    color: deeppink;
+    font-weight: bold;
+}

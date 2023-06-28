@@ -127,3 +127,11 @@ main {
 #info-description {
     font-style: italic;
 }
+#arrow-container {
+    display: flex;
+    justify-content: center;
+}
+#info-arrow {
+    color: deeppink;
+    font-weight: bold;
+}

@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('latitude');
             $table->string('longitude');
             $table->integer('year');
+            $table->integer('direction_deg_from_north')->default(0);
             $table->timestamps();
         });
     }

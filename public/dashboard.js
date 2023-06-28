@@ -14,6 +14,6 @@ function search() {
     for (let i = 0; i < response.length; i++) {
         let row = response[i];
         table.innerHTML += '<tr><td>' + row.id + '</td><td>' + row.name + '</td><td>' + row.year + '</td>' +
-            '<td class="actions"><a href="/form/' + row.id + '">Labot</a><a href="/delete/' + row.id + '">Dzēst</a></td>'
+        '<td class="actions"><a href="/form/' + row.id + '">Labot</a><a href="/delete/' + row.id + '" onclick="return confirm(\'Tiešām dzēst?\')">Dzēst</a></td>'
     }
 }

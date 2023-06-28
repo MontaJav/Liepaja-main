@@ -10,6 +10,7 @@ class Photo extends Model
         'name',
         'image',
         'description',
+        'direction_deg_from_north',
         'latitude',
         'longitude',
         'year',

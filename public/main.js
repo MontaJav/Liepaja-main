@@ -21,6 +21,7 @@ function setInfo(photo) {
     document.getElementById('info-year').innerHTML = photo.year;
     document.getElementById('info-name').innerHTML = photo.name;
     document.getElementById('info-description').innerHTML = photo.description ?? '';
+    document.getElementById('info-arrow').style.transform = `rotate(${photo.direction_deg_from_north}deg)`;
 }
 
 function initMap(photos) {

@@ -31,3 +31,7 @@ function initMap() {
 }
 
 window.initMap = initMap;
+function updateArrow(value) {
+    const arrow = document.getElementById("arrow");
+    arrow.style.transform = `rotate(${value}deg)`;
+}

@@ -31,6 +31,7 @@
                     <div id="info-image"></div>
                     <div id="info-year"></div>
                     <div><h2 id="info-name"></h2></div>
+                    <div id="arrow-container"><div id="info-arrow">↑</div></div>
                     <div>
                         <h4 id="info-description-header">Foto apraksts:</h4>
                         <div id="info-description"></div>

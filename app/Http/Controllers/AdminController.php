@@ -63,6 +63,7 @@ class AdminController extends Controller
         $photo->description = $request->description;
         $photo->latitude = $request->latitude;
         $photo->longitude = $request->longitude;
+        $photo->direction_deg_from_north = $request->direction_deg_from_north;
 
         $image = $request->image;
         if ($image) {
@@ -75,7 +76,9 @@ class AdminController extends Controller
     }
 
     public function delete(int $id) {
-        Photo::where('id', $id)->delete();
+        $photo = Photo::find($id);
+        Storage::delete($photo->image);
+        $photo->delete();
 
         return redirect('dashboard');
     }
